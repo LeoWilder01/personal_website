@@ -1,0 +1,242 @@
+/* ─────────────────────────────────────────
+   PAPER PAGE — Academic paper presentation
+   Visual language mirrors the main portfolio.
+   Fill in placeholder text marked with [BRACKETS].
+───────────────────────────────────────── */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:    #ffffff;
+  --text:  #111111;
+  --muted: #aaaaaa;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans:  'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --col:  680px;   /* max width of text content */
+  --pad:  200px;   /* left padding, mirrors sidebar */
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  min-height: 100vh;
+}
+
+img  { display: block; max-width: 100%; }
+a    { color: inherit; }
+
+
+/* ─────────────────────────────────────────
+   BACK BUTTON
+───────────────────────────────────────── */
+.back-btn {
+  position: fixed;
+  top: 48px;
+  left: 36px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 0.5625rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  z-index: 100;
+  transition: opacity 0.2s var(--ease);
+}
+.back-btn:hover { opacity: 0.4; }
+.back-btn .arrow { font-size: 0.75rem; }
+
+
+/* ─────────────────────────────────────────
+   PAGE WRAPPER
+───────────────────────────────────────── */
+.page {
+  padding: 96px 96px 160px var(--pad);
+  max-width: calc(var(--pad) + var(--col) + 96px);
+}
+
+
+/* ─────────────────────────────────────────
+   HEADER — venue badge, title, authors
+───────────────────────────────────────── */
+.paper-eyebrow {
+  font-size: 0.5625rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.paper-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.12;
+  max-width: var(--col);
+  margin-bottom: 32px;
+}
+
+.paper-authors-block {
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 2;
+  color: var(--text);
+  max-width: var(--col);
+  margin-bottom: 6px;
+}
+.paper-authors-block strong { font-weight: 500; }
+
+.paper-affil {
+  font-size: 0.5625rem;
+  color: var(--muted);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  margin-bottom: 36px;
+}
+
+
+/* ─────────────────────────────────────────
+   LINK BUTTONS — PDF · arXiv · Code · BibTeX
+───────────────────────────────────────── */
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 64px;
+}
+
+.paper-link {
+  font-size: 0.5625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 400;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 5px 14px;
+  color: var(--text);
+  text-decoration: none;
+  transition: opacity 0.2s var(--ease);
+}
+.paper-link:hover { opacity: 0.45; }
+
+
+/* ─────────────────────────────────────────
+   TEASER IMAGE — full width, with caption
+───────────────────────────────────────── */
+.paper-teaser {
+  margin-bottom: 72px;
+}
+
+.paper-teaser img {
+  width: 100%;
+  max-width: var(--col);
+  height: auto;
+  display: block;
+}
+
+.teaser-caption {
+  margin-top: 10px;
+  font-size: 0.5625rem;
+  color: var(--muted);
+  font-weight: 300;
+  line-height: 1.7;
+  max-width: var(--col);
+}
+
+
+/* ─────────────────────────────────────────
+   SECTIONS — Abstract · Method · Results
+───────────────────────────────────────── */
+.paper-section {
+  max-width: var(--col);
+  margin-bottom: 56px;
+}
+
+.section-label {
+  font-size: 0.5625rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.section-body {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 2.1;
+  color: var(--text);
+}
+
+.section-body p + p { margin-top: 1em; }
+
+
+/* ─────────────────────────────────────────
+   FIGURES — method diagrams, result images
+───────────────────────────────────────── */
+.paper-figure {
+  max-width: var(--col);
+  margin-bottom: 40px;
+}
+
+.paper-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #f5f5f5; /* visible while loading */
+}
+
+.figure-caption {
+  margin-top: 8px;
+  font-size: 0.5625rem;
+  color: var(--muted);
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+
+/* ─────────────────────────────────────────
+   BIBTEX BLOCK
+───────────────────────────────────────── */
+.bibtex-block {
+  max-width: var(--col);
+  margin-bottom: 56px;
+}
+
+.bibtex-code {
+  background: #f7f7f7;
+  border-left: 2px solid #e0e0e0;
+  padding: 20px 24px;
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 0.625rem;
+  line-height: 1.9;
+  color: #444;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+
+/* ─────────────────────────────────────────
+   RESPONSIVE
+───────────────────────────────────────── */
+@media (max-width: 720px) {
+  :root { --pad: 32px; }
+  .back-btn { left: 20px; top: 24px; }
+  .page { padding: 72px 32px 120px 32px; }
+}

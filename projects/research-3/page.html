@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Paper Title Three] — Yijiang Liu</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../paper-page.css">
+</head>
+<body>
+
+  <!-- Back button -->
+  <button class="back-btn" onclick="history.back()">
+    <span class="arrow">←</span>
+    <span>Back</span>
+  </button>
+
+  <div class="page">
+
+    <!-- ── Header ── -->
+    <p class="paper-eyebrow">Research · [Conference / Journal Abbreviation] · [Year]</p>
+
+    <h1 class="paper-title">
+      [Full Paper Title Goes Here]
+    </h1>
+
+    <p class="paper-authors-block">
+      <strong>Yijiang Liu</strong>,
+      [Co-Author Name],
+      [Co-Author Name]
+    </p>
+    <p class="paper-affil">
+      [Institution / Lab Name], [University Name]
+    </p>
+
+    <!-- ── Links ── -->
+    <div class="paper-links">
+      <a class="paper-link" href="#">PDF</a>
+      <a class="paper-link" href="#">arXiv</a>
+      <a class="paper-link" href="#">Code</a>
+      <a class="paper-link" href="#">Slides</a>
+      <a class="paper-link" href="#">Poster</a>
+      <a class="paper-link" href="#bibtex">BibTeX</a>
+    </div>
+
+    <!-- ── Teaser image ── -->
+    <div class="paper-teaser">
+      <div style="width:100%;max-width:680px;height:280px;background:#f2f2f2;"></div>
+      <p class="teaser-caption">
+        [Figure 1. One sentence describing what the teaser image shows and its significance.]
+      </p>
+    </div>
+
+    <!-- ── Abstract ── -->
+    <div class="paper-section">
+      <p class="section-label">Abstract</p>
+      <div class="section-body">
+        <p>
+          [Write your abstract here. Describe the problem, your approach, and key results.
+          Typically 150–250 words covering: motivation, method, experiments, and contribution.]
+        </p>
+      </div>
+    </div>
+
+    <!-- ── Introduction / Background ── -->
+    <div class="paper-section">
+      <p class="section-label">Introduction</p>
+      <div class="section-body">
+        <p>
+          [Describe the problem and motivation. What gap does this work address?
+          Why is it important?]
+        </p>
+        <p>
+          [Summarize your contributions in 2–4 bullet-style sentences.]
+        </p>
+      </div>
+    </div>
+
+    <!-- ── Method figure (optional) ── -->
+    <div class="paper-figure">
+      <div style="width:100%;height:200px;background:#f2f2f2;"></div>
+      <p class="figure-caption">
+        [Figure 2. Method overview. Describe each component briefly.]
+      </p>
+    </div>
+
+    <!-- ── Method ── -->
+    <div class="paper-section">
+      <p class="section-label">Method</p>
+      <div class="section-body">
+        <p>
+          [Describe your technical approach. How does your system or method work?
+          What are the key design decisions?]
+        </p>
+      </div>
+    </div>
+
+    <!-- ── Results ── -->
+    <div class="paper-section">
+      <p class="section-label">Results</p>
+      <div class="section-body">
+        <p>
+          [Summarize your experimental results. What datasets or user studies were used?
+          What did you find?]
+        </p>
+      </div>
+    </div>
+
+    <!-- ── Result figure (optional) ── -->
+    <div class="paper-figure">
+      <div style="width:100%;height:200px;background:#f2f2f2;"></div>
+      <p class="figure-caption">
+        [Figure 3. Qualitative results. Caption describing what is shown.]
+      </p>
+    </div>
+
+    <!-- ── BibTeX ── -->
+    <div class="bibtex-block" id="bibtex">
+      <p class="section-label">BibTeX</p>
+      <pre class="bibtex-code">@inproceedings{liu[year][keyword],
+  title     = {[Full Paper Title Goes Here]},
+  author    = {Liu, Yijiang and [LastName, FirstName] and [LastName, FirstName]},
+  booktitle = {[Full Conference / Journal Name]},
+  year      = {[Year]},
+  pages     = {[xx--xx]},
+  doi       = {[DOI]},
+}</pre>
+    </div>
+
+  </div><!-- /.page -->
+
+</body>
+</html>
