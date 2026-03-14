@@ -42,8 +42,8 @@
 const RECENT_ITEMS = [
   /* ── Slot 1 ──────────────────────────────────────────────── */
   {
-    title: "Internet-Babel",
-    href: "projects/internet-babel/page.html",
+    title: "Mental Gen",
+    href: "projects/mental-gen/page.html",
     thumb: "recent/01-thumb.jpg",
     preview: "recent/01-preview.jpg",
     date: "2024", // ← year or "Month Year"
@@ -53,8 +53,8 @@ const RECENT_ITEMS = [
 
   /* ── Slot 2 ──────────────────────────────────────────────── */
   {
-    title: "Mental-Gen",
-    href: "projects/mental-gen/page.html",
+    title: "Internet-Babel",
+    href: "projects/internet-babel/page.html",
     thumb: "recent/02-thumb.jpg",
     preview: "recent/02-preview.jpg",
     date: "2024",
@@ -74,8 +74,8 @@ const RECENT_ITEMS = [
   },
 
   {
-    title: "Olfactory Memory Map",
-    href: "projects/olfactory-map/page.html",
+    title: "Life Room of Agents",
+    href: "projects/agent-life/page.html",
     thumb: "recent/05-thumb.jpg",
     preview: "recent/05-preview.jpg",
     date: "2024",
@@ -85,11 +85,11 @@ const RECENT_ITEMS = [
 
   /* ── Slot 4 ──────────────────────────────────────────────── */
   {
-    title: "Read the Library Itself",
-    href: "projects/library/page.html",
+    title: "Cyber mask",
+    href: "projects/cyber-mask/page.html",
     thumb: "recent/04-thumb.jpg",
     preview: "recent/04-preview.jpg",
-    date: "2023",
+    date: "2025",
     type: "Research",
     desc: "Two-sentence description of this project. Edit this text in recent.js.",
   },
