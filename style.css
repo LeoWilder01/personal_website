@@ -510,6 +510,44 @@ a {
 }
 
 /* ─────────────────────────────────────────
+   PROJECTS SCENE — sub-sections
+───────────────────────────────────────── */
+.projects-content {
+  max-height: calc(120vh - 200px);
+  overflow-y: auto;
+  padding-right: 8px;
+  scrollbar-width: thin;
+  scrollbar-color: #ddd transparent;
+}
+.projects-content::-webkit-scrollbar {
+  width: 3px;
+}
+.projects-content::-webkit-scrollbar-thumb {
+  background: #ddd;
+}
+
+.project-sub-section {
+  margin-bottom: 32px;
+}
+
+.project-sub-title {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--muted);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.project-sub-section .project-row {
+  padding-right: 0;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* ─────────────────────────────────────────
    CONTACT SCENE
 ───────────────────────────────────────── */
 .contact-body {

@@ -34,10 +34,10 @@ const SCENE_GAP_EXTRA = 0.25;
 // ──────────────────────────────────────────────────────────────
 
 // Map nav data-target → scene index (used for nav clicks)
-const NAV_TO_SCENE = { '0': 0, '1': 1, '3': 2, '4': 4 };
+const NAV_TO_SCENE = { '0': 0, '1': 1, '2': 2, '3': 3 };
 
 // Which nav target is "active" for each scene index
-const SCENE_TO_NAV = ['0', '1', '3', '1', '4'];
+const SCENE_TO_NAV = ['0', '1', '2', '3'];
 
 // Snap positions: computed dynamically, updated on resize
 let SNAP_POSITIONS = [];
