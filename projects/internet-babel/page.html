@@ -1,76 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Internet-Babel — Yijiang Liu</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../project-page.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internet-Babel — Yijiang Liu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../project-page.css" />
+  </head>
+  <body>
+    <button class="back-btn" onclick="history.back()">
+      <span class="arrow">←</span>
+      <span>Back</span>
+    </button>
 
-  <button class="back-btn" onclick="history.back()">
-    <span class="arrow">←</span>
-    <span>Back</span>
-  </button>
+    <div class="page">
+      <p class="proj-eyebrow">Development · [2026]</p>
+      <h1 class="proj-title">Internet-Babel</h1>
+      <p class="proj-lede">
+        [Language can be translated, but meaning often does not circulate]
+      </p>
 
-  <div class="page">
+      <div class="proj-meta">
+        <span class="meta-label">Year</span>
+        <span class="meta-value">[2026]</span>
 
-    <p class="proj-eyebrow">Development · [Year]</p>
-    <h1 class="proj-title">Internet-Babel</h1>
-    <p class="proj-lede">
-      [One sentence project lede — what is this and why does it matter?]
-    </p>
+        <span class="meta-label">Type</span>
+        <span class="meta-value">[Web App / Tool / Internet meme tracker]</span>
 
-    <div class="proj-meta">
-      <span class="meta-label">Year</span>
-      <span class="meta-value">[Year]</span>
+        <span class="meta-label">Stack</span>
+        <span class="meta-value"
+          >[Node.js · TypeScript · Next.js · PostgreSQL]</span
+        >
 
-      <span class="meta-label">Type</span>
-      <span class="meta-value">[e.g. Web App / Tool / Experiment]</span>
-
-      <span class="meta-label">Stack</span>
-      <span class="meta-value">[e.g. TypeScript · Next.js · PostgreSQL]</span>
-
-      <span class="meta-label">Links</span>
-      <span class="meta-value">
-        <a href="[GITHUB-URL]" target="_blank" rel="noopener">[GitHub]</a>
-        &nbsp;·&nbsp;
-        <a href="[LIVE-URL]" target="_blank" rel="noopener">[Live Demo]</a>
-      </span>
-    </div>
-
-    <div class="proj-section">
-      <p class="section-label">Background</p>
-      <div class="section-body">
-        [Describe the motivation and context for this project.]
+        <span class="meta-label">Links</span>
+        <span class="meta-value">
+          <a
+            href="https://github.com/LeoWilder01/internet_babel"
+            target="_blank"
+            rel="noopener"
+            >[GitHub]</a
+          >
+          &nbsp;·&nbsp;
+          <a
+            href="https://internet-babel.onrender.com/"
+            target="_blank"
+            rel="noopener"
+            >[Live Demo]</a
+          >
+        </span>
       </div>
-    </div>
 
-    <div class="proj-section">
-      <p class="section-label">What it does</p>
-      <div class="section-body">
-        [Explain what the project does and how it works.]
+      <div class="proj-section">
+        <p class="section-label">Demonstration</p>
+        <div class="section-body">
+          <a
+            href="https://internet-babel.onrender.com/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="preview.png"
+              alt="Internet-Babel demo"
+              style="width: 100%; display: block"
+            />
+          </a>
+        </div>
       </div>
-    </div>
 
-    <div class="proj-section">
-      <p class="section-label">Technical notes</p>
-      <div class="section-body">
-        [Key technical decisions, architecture, or interesting implementation details.]
+      <div class="proj-section">
+        <p class="section-label">Background</p>
+        <div class="section-body">
+          [In an era marked by increasing fragmentation, cultural divergence,
+          and the breakdown of shared public discourse, this personal context
+          has become both more influential and more opaque. Disagreements rarely
+          stem from isolated opinions alone; more often, they emerge from deeply
+          accumulated experiences, cultural trajectories, and unspoken
+          assumptions that never fully surface in language. As a result,
+          communication increasingly fails not because people lack words, but
+          because they lack access to one another's contexts. ]
+        </div>
       </div>
-    </div>
 
-    <!-- Uncomment and fill in once you have images:
+      <div class="proj-section">
+        <p class="section-label">What it does</p>
+        <div class="section-body">
+          [The Method this broadcast trying to propose is a representation
+          learning-oriented project focused on social interaction, semantic
+          understanding, and cultural immersion. It can be understood as an
+          “Internet Reverse Tower of Babel.” It is based on a very simple idea:
+          context as a language. Rather than understanding one another only
+          through the final outputs of what they actually said, let’s now aims
+          to understand each other through the process of thinking itself,
+          through context and background information. Whether at the level of
+          ethnic groups, cultures, or communities, all such entities evolve
+          internally over long periods of time. Language can be translated, but
+          meaning often does not circulate. For example, memes or in-group jokes
+          that emerge within a culture are frequently difficult to truly
+          understand once they cross into another culture, even after
+          translation, The same applies at the individual level. Every person
+          undergoes a long, unique, and complex process of development. These
+          experiences support cognition and every decision a person makes, while
+          also creating distance between people. Starting from cultural
+          phenomena or semantic outcomes that are already formed yet difficult
+          for outsiders to understand, using agents, we traces their evolution
+          across the internet, analyzes how meaning shifts at key moments, and
+          examines how collective usage gradually reinforces or distorts
+          original semantics. Over time, these evolutionary chains together
+          construct a “Tower of Babel,” and by moving downward along these
+          chains, people can gradually access the full context of others. ]
+        </div>
+      </div>
+
+      <div class="proj-section">
+        <p class="section-label">Technical notes</p>
+        <div class="section-body">[Reddit API used for semantic reasoning]</div>
+      </div>
+
+      <!-- Uncomment and fill in once you have images:
     <div class="proj-images">
       <img src="1.png" alt="">
       <img src="2.png" alt="">
     </div>
-    -->
-
-  </div>
-
-</body>
+    --></div>
+  </body>
 </html>
